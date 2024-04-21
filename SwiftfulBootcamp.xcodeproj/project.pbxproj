@@ -14,6 +14,9 @@
 		AD5540952BD3D2F300756233 /* DragGestureBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD5540942BD3D2F300756233 /* DragGestureBootcamp.swift */; };
 		AD5540972BD3EB3900756233 /* GeometryReaderBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD5540962BD3EB3900756233 /* GeometryReaderBootcamp.swift */; };
 		AD5540992BD4E18300756233 /* MaskBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD5540982BD4E18300756233 /* MaskBootcamp.swift */; };
+		AD55409B2BD5346500756233 /* SoundBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD55409A2BD5346500756233 /* SoundBootcamp.swift */; };
+		AD55409F2BD53E9500756233 /* tada.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = AD55409E2BD53E9500756233 /* tada.mp3 */; };
+		AD5540A12BD53EA500756233 /* ding.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = AD5540A02BD53EA500756233 /* ding.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +28,9 @@
 		AD5540942BD3D2F300756233 /* DragGestureBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DragGestureBootcamp.swift; sourceTree = "<group>"; };
 		AD5540962BD3EB3900756233 /* GeometryReaderBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeometryReaderBootcamp.swift; sourceTree = "<group>"; };
 		AD5540982BD4E18300756233 /* MaskBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaskBootcamp.swift; sourceTree = "<group>"; };
+		AD55409A2BD5346500756233 /* SoundBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundBootcamp.swift; sourceTree = "<group>"; };
+		AD55409E2BD53E9500756233 /* tada.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = tada.mp3; sourceTree = "<group>"; };
+		AD5540A02BD53EA500756233 /* ding.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = ding.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +63,7 @@
 		AD5540852BD3D2D100756233 /* SwiftfulBootcamp */ = {
 			isa = PBXGroup;
 			children = (
+				AD55409C2BD53E7400756233 /* Resources */,
 				AD5540862BD3D2D100756233 /* SwiftfulBootcampApp.swift */,
 				AD5540882BD3D2D100756233 /* ContentView.swift */,
 				AD55408A2BD3D2D300756233 /* Assets.xcassets */,
@@ -64,6 +71,7 @@
 				AD5540942BD3D2F300756233 /* DragGestureBootcamp.swift */,
 				AD5540962BD3EB3900756233 /* GeometryReaderBootcamp.swift */,
 				AD5540982BD4E18300756233 /* MaskBootcamp.swift */,
+				AD55409A2BD5346500756233 /* SoundBootcamp.swift */,
 			);
 			path = SwiftfulBootcamp;
 			sourceTree = "<group>";
@@ -74,6 +82,23 @@
 				AD55408D2BD3D2D300756233 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		AD55409C2BD53E7400756233 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				AD55409D2BD53E8900756233 /* Sounds */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		AD55409D2BD53E8900756233 /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				AD5540A02BD53EA500756233 /* ding.mp3 */,
+				AD55409E2BD53E9500756233 /* tada.mp3 */,
+			);
+			path = Sounds;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,6 +160,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				AD55408E2BD3D2D300756233 /* Preview Assets.xcassets in Resources */,
+				AD5540A12BD53EA500756233 /* ding.mp3 in Resources */,
+				AD55409F2BD53E9500756233 /* tada.mp3 in Resources */,
 				AD55408B2BD3D2D300756233 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -148,6 +175,7 @@
 			files = (
 				AD5540992BD4E18300756233 /* MaskBootcamp.swift in Sources */,
 				AD5540952BD3D2F300756233 /* DragGestureBootcamp.swift in Sources */,
+				AD55409B2BD5346500756233 /* SoundBootcamp.swift in Sources */,
 				AD5540892BD3D2D100756233 /* ContentView.swift in Sources */,
 				AD5540872BD3D2D100756233 /* SwiftfulBootcampApp.swift in Sources */,
 				AD5540972BD3EB3900756233 /* GeometryReaderBootcamp.swift in Sources */,
