@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		AD5540872BD3D2D100756233 /* SwiftfulBootcampApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD5540862BD3D2D100756233 /* SwiftfulBootcampApp.swift */; };
-		AD5540892BD3D2D100756233 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD5540882BD3D2D100756233 /* ContentView.swift */; };
 		AD55408B2BD3D2D300756233 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD55408A2BD3D2D300756233 /* Assets.xcassets */; };
 		AD55408E2BD3D2D300756233 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD55408D2BD3D2D300756233 /* Preview Assets.xcassets */; };
 		AD5540952BD3D2F300756233 /* DragGestureBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD5540942BD3D2F300756233 /* DragGestureBootcamp.swift */; };
@@ -18,12 +17,13 @@
 		AD55409F2BD53E9500756233 /* tada.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = AD55409E2BD53E9500756233 /* tada.mp3 */; };
 		AD5540A12BD53EA500756233 /* ding.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = AD5540A02BD53EA500756233 /* ding.mp3 */; };
 		AD5540A32BD5438100756233 /* LocalNotificationBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD5540A22BD5438100756233 /* LocalNotificationBootcamp.swift */; };
+		AD5540A72BD7F8A200756233 /* CoreDataBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD5540A62BD7F8A200756233 /* CoreDataBootcamp.swift */; };
+		AD5540AA2BD7F9D600756233 /* FruitsContainer.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AD5540A82BD7F9D600756233 /* FruitsContainer.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		AD5540832BD3D2D100756233 /* SwiftfulBootcamp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftfulBootcamp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD5540862BD3D2D100756233 /* SwiftfulBootcampApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftfulBootcampApp.swift; sourceTree = "<group>"; };
-		AD5540882BD3D2D100756233 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		AD55408A2BD3D2D300756233 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AD55408D2BD3D2D300756233 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		AD5540942BD3D2F300756233 /* DragGestureBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DragGestureBootcamp.swift; sourceTree = "<group>"; };
@@ -33,6 +33,8 @@
 		AD55409E2BD53E9500756233 /* tada.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = tada.mp3; sourceTree = "<group>"; };
 		AD5540A02BD53EA500756233 /* ding.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = ding.mp3; sourceTree = "<group>"; };
 		AD5540A22BD5438100756233 /* LocalNotificationBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalNotificationBootcamp.swift; sourceTree = "<group>"; };
+		AD5540A62BD7F8A200756233 /* CoreDataBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataBootcamp.swift; sourceTree = "<group>"; };
+		AD5540A92BD7F9D600756233 /* FruitsContainer.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FruitsContainer.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,9 +67,8 @@
 		AD5540852BD3D2D100756233 /* SwiftfulBootcamp */ = {
 			isa = PBXGroup;
 			children = (
-				AD55409C2BD53E7400756233 /* Resources */,
 				AD5540862BD3D2D100756233 /* SwiftfulBootcampApp.swift */,
-				AD5540882BD3D2D100756233 /* ContentView.swift */,
+				AD55409C2BD53E7400756233 /* Resources */,
 				AD55408A2BD3D2D300756233 /* Assets.xcassets */,
 				AD55408C2BD3D2D300756233 /* Preview Content */,
 				AD5540942BD3D2F300756233 /* DragGestureBootcamp.swift */,
@@ -75,6 +76,7 @@
 				AD5540982BD4E18300756233 /* MaskBootcamp.swift */,
 				AD55409A2BD5346500756233 /* SoundBootcamp.swift */,
 				AD5540A22BD5438100756233 /* LocalNotificationBootcamp.swift */,
+				AD5540A62BD7F8A200756233 /* CoreDataBootcamp.swift */,
 			);
 			path = SwiftfulBootcamp;
 			sourceTree = "<group>";
@@ -91,6 +93,7 @@
 			isa = PBXGroup;
 			children = (
 				AD55409D2BD53E8900756233 /* Sounds */,
+				AD5540A82BD7F9D600756233 /* FruitsContainer.xcdatamodeld */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -176,10 +179,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AD5540AA2BD7F9D600756233 /* FruitsContainer.xcdatamodeld in Sources */,
 				AD5540992BD4E18300756233 /* MaskBootcamp.swift in Sources */,
+				AD5540A72BD7F8A200756233 /* CoreDataBootcamp.swift in Sources */,
 				AD5540952BD3D2F300756233 /* DragGestureBootcamp.swift in Sources */,
 				AD55409B2BD5346500756233 /* SoundBootcamp.swift in Sources */,
-				AD5540892BD3D2D100756233 /* ContentView.swift in Sources */,
 				AD5540872BD3D2D100756233 /* SwiftfulBootcampApp.swift in Sources */,
 				AD5540A32BD5438100756233 /* LocalNotificationBootcamp.swift in Sources */,
 				AD5540972BD3EB3900756233 /* GeometryReaderBootcamp.swift in Sources */,
@@ -388,6 +392,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		AD5540A82BD7F9D600756233 /* FruitsContainer.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				AD5540A92BD7F9D600756233 /* FruitsContainer.xcdatamodel */,
+			);
+			currentVersion = AD5540A92BD7F9D600756233 /* FruitsContainer.xcdatamodel */;
+			path = FruitsContainer.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = AD55407B2BD3D2D100756233 /* Project object */;
 }
