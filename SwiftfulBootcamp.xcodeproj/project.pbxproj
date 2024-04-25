@@ -22,6 +22,7 @@
 		AD5540A72BD7F8A200756233 /* CoreDataBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD5540A62BD7F8A200756233 /* CoreDataBootcamp.swift */; };
 		AD5540AA2BD7F9D600756233 /* FruitsContainer.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AD5540A82BD7F9D600756233 /* FruitsContainer.xcdatamodeld */; };
 		AD6003FE2BDA17EE009AB89A /* BackgroundThreadBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6003FD2BDA17EE009AB89A /* BackgroundThreadBootcamp.swift */; };
+		AD6004002BDA243A009AB89A /* WeakSelfBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6003FF2BDA243A009AB89A /* WeakSelfBootcamp.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +42,7 @@
 		AD5540A62BD7F8A200756233 /* CoreDataBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataBootcamp.swift; sourceTree = "<group>"; };
 		AD5540A92BD7F9D600756233 /* FruitsContainer.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FruitsContainer.xcdatamodel; sourceTree = "<group>"; };
 		AD6003FD2BDA17EE009AB89A /* BackgroundThreadBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundThreadBootcamp.swift; sourceTree = "<group>"; };
+		AD6003FF2BDA243A009AB89A /* WeakSelfBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeakSelfBootcamp.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,8 +84,9 @@
 				AD5540A22BD5438100756233 /* LocalNotificationBootcamp.swift */,
 				AD5540A62BD7F8A200756233 /* CoreDataBootcamp.swift */,
 				AD3AA41F2BD8CA0800CF181B /* CoreDataRelationshipsBootcamp.swift */,
-				AD55408C2BD3D2D300756233 /* Preview Content */,
 				AD6003FD2BDA17EE009AB89A /* BackgroundThreadBootcamp.swift */,
+				AD6003FF2BDA243A009AB89A /* WeakSelfBootcamp.swift */,
+				AD55408C2BD3D2D300756233 /* Preview Content */,
 			);
 			path = SwiftfulBootcamp;
 			sourceTree = "<group>";
@@ -188,6 +191,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AD6004002BDA243A009AB89A /* WeakSelfBootcamp.swift in Sources */,
 				AD5540AA2BD7F9D600756233 /* FruitsContainer.xcdatamodeld in Sources */,
 				AD5540992BD4E18300756233 /* MaskBootcamp.swift in Sources */,
 				AD6003FE2BDA17EE009AB89A /* BackgroundThreadBootcamp.swift in Sources */,
