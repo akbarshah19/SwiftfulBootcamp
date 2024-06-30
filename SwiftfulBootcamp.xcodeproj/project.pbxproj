@@ -18,6 +18,7 @@
 		AD4E0D0F2C2171B30029621F /* PhotoModelCacheManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD4E0D0E2C2171B30029621F /* PhotoModelCacheManager.swift */; };
 		AD4E0D112C2172AD0029621F /* PhotoModelFileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD4E0D102C2172AD0029621F /* PhotoModelFileManager.swift */; };
 		AD4E0D132C21C5B00029621F /* AccessibilityTextBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD4E0D122C21C5B00029621F /* AccessibilityTextBootcamp.swift */; };
+		AD4F01982C316E0E00F2668B /* ViewModifierBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD4F01972C316E0E00F2668B /* ViewModifierBootcamp.swift */; };
 		AD5540872BD3D2D100756233 /* SwiftfulBootcampApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD5540862BD3D2D100756233 /* SwiftfulBootcampApp.swift */; };
 		AD55408B2BD3D2D300756233 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD55408A2BD3D2D300756233 /* Assets.xcassets */; };
 		AD55408E2BD3D2D300756233 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD55408D2BD3D2D300756233 /* Preview Assets.xcassets */; };
@@ -53,6 +54,7 @@
 		AD4E0D0E2C2171B30029621F /* PhotoModelCacheManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoModelCacheManager.swift; sourceTree = "<group>"; };
 		AD4E0D102C2172AD0029621F /* PhotoModelFileManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoModelFileManager.swift; sourceTree = "<group>"; };
 		AD4E0D122C21C5B00029621F /* AccessibilityTextBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessibilityTextBootcamp.swift; sourceTree = "<group>"; };
+		AD4F01972C316E0E00F2668B /* ViewModifierBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModifierBootcamp.swift; sourceTree = "<group>"; };
 		AD5540832BD3D2D100756233 /* SwiftfulBootcamp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftfulBootcamp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD5540862BD3D2D100756233 /* SwiftfulBootcampApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftfulBootcampApp.swift; sourceTree = "<group>"; };
 		AD55408A2BD3D2D300756233 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -135,6 +137,40 @@
 			path = Utils;
 			sourceTree = "<group>";
 		};
+		AD4F01952C316B3200F2668B /* Intermediate */ = {
+			isa = PBXGroup;
+			children = (
+				AD55409C2BD53E7400756233 /* Resources */,
+				AD5540942BD3D2F300756233 /* DragGestureBootcamp.swift */,
+				AD5540962BD3EB3900756233 /* GeometryReaderBootcamp.swift */,
+				AD5540982BD4E18300756233 /* MaskBootcamp.swift */,
+				AD55409A2BD5346500756233 /* SoundBootcamp.swift */,
+				AD5540A22BD5438100756233 /* LocalNotificationBootcamp.swift */,
+				AD5540A62BD7F8A200756233 /* CoreDataBootcamp.swift */,
+				AD3AA41F2BD8CA0800CF181B /* CoreDataRelationshipsBootcamp.swift */,
+				AD6003FD2BDA17EE009AB89A /* BackgroundThreadBootcamp.swift */,
+				AD6003FF2BDA243A009AB89A /* WeakSelfBootcamp.swift */,
+				AD6004012BDA2E54009AB89A /* TypealiasBootcamp.swift */,
+				AD6004032BDA30BA009AB89A /* EscapingClosuresBootcamp.swift */,
+				ADE17CAC2BE1694F00723120 /* CombineBootcamp.swift */,
+				AD8AB7B62BFD1C6B00932B61 /* SubscriberBootcamp.swift */,
+				ADF17EEC2C14589B00ECC22A /* FileManagerBootcamp.swift */,
+				AD699E4A2C17162B00DA8A4A /* CacheBootcamp.swift */,
+				AD4E0CFD2C1F18E20029621F /* DownloadingImages */,
+				AD4E0D122C21C5B00029621F /* AccessibilityTextBootcamp.swift */,
+				AD9E53672C28157D0042837E /* AccessibilityVoiceOverBootcamp.swift */,
+			);
+			path = Intermediate;
+			sourceTree = "<group>";
+		};
+		AD4F01962C316B4F00F2668B /* Advanced */ = {
+			isa = PBXGroup;
+			children = (
+				AD4F01972C316E0E00F2668B /* ViewModifierBootcamp.swift */,
+			);
+			path = Advanced;
+			sourceTree = "<group>";
+		};
 		AD55407A2BD3D2D100756233 = {
 			isa = PBXGroup;
 			children = (
@@ -155,25 +191,8 @@
 			isa = PBXGroup;
 			children = (
 				AD5540862BD3D2D100756233 /* SwiftfulBootcampApp.swift */,
-				AD55409C2BD53E7400756233 /* Resources */,
-				AD5540942BD3D2F300756233 /* DragGestureBootcamp.swift */,
-				AD5540962BD3EB3900756233 /* GeometryReaderBootcamp.swift */,
-				AD5540982BD4E18300756233 /* MaskBootcamp.swift */,
-				AD55409A2BD5346500756233 /* SoundBootcamp.swift */,
-				AD5540A22BD5438100756233 /* LocalNotificationBootcamp.swift */,
-				AD5540A62BD7F8A200756233 /* CoreDataBootcamp.swift */,
-				AD3AA41F2BD8CA0800CF181B /* CoreDataRelationshipsBootcamp.swift */,
-				AD6003FD2BDA17EE009AB89A /* BackgroundThreadBootcamp.swift */,
-				AD6003FF2BDA243A009AB89A /* WeakSelfBootcamp.swift */,
-				AD6004012BDA2E54009AB89A /* TypealiasBootcamp.swift */,
-				AD6004032BDA30BA009AB89A /* EscapingClosuresBootcamp.swift */,
-				ADE17CAC2BE1694F00723120 /* CombineBootcamp.swift */,
-				AD8AB7B62BFD1C6B00932B61 /* SubscriberBootcamp.swift */,
-				ADF17EEC2C14589B00ECC22A /* FileManagerBootcamp.swift */,
-				AD699E4A2C17162B00DA8A4A /* CacheBootcamp.swift */,
-				AD4E0CFD2C1F18E20029621F /* DownloadingImages */,
-				AD4E0D122C21C5B00029621F /* AccessibilityTextBootcamp.swift */,
-				AD9E53672C28157D0042837E /* AccessibilityVoiceOverBootcamp.swift */,
+				AD4F01952C316B3200F2668B /* Intermediate */,
+				AD4F01962C316B4F00F2668B /* Advanced */,
 				AD55408C2BD3D2D300756233 /* Preview Content */,
 			);
 			path = SwiftfulBootcamp;
@@ -290,6 +309,7 @@
 				ADF17EED2C14589B00ECC22A /* FileManagerBootcamp.swift in Sources */,
 				AD5540992BD4E18300756233 /* MaskBootcamp.swift in Sources */,
 				AD4E0D0D2C2039330029621F /* DownloadingImageView.swift in Sources */,
+				AD4F01982C316E0E00F2668B /* ViewModifierBootcamp.swift in Sources */,
 				AD6003FE2BDA17EE009AB89A /* BackgroundThreadBootcamp.swift in Sources */,
 				AD5540A72BD7F8A200756233 /* CoreDataBootcamp.swift in Sources */,
 				AD4E0D072C202D9F0029621F /* DownloadingImagesVM.swift in Sources */,
