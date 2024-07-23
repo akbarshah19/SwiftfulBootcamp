@@ -37,8 +37,10 @@
 		AD6004042BDA30BA009AB89A /* EscapingClosuresBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6004032BDA30BA009AB89A /* EscapingClosuresBootcamp.swift */; };
 		AD699E4B2C17162B00DA8A4A /* CacheBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD699E4A2C17162B00DA8A4A /* CacheBootcamp.swift */; };
 		AD8AB7B72BFD1C6B00932B61 /* SubscriberBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD8AB7B62BFD1C6B00932B61 /* SubscriberBootcamp.swift */; };
+		AD9661192C4F8AF100896794 /* CustomShapeBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD9661182C4F8AF100896794 /* CustomShapeBootcamp.swift */; };
 		AD9E53682C28157D0042837E /* AccessibilityVoiceOverBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD9E53672C28157D0042837E /* AccessibilityVoiceOverBootcamp.swift */; };
 		ADBC40DC2C3D08EC005149B3 /* ButtonStyleBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADBC40DB2C3D08EC005149B3 /* ButtonStyleBootcamp.swift */; };
+		ADBC40DE2C3D1254005149B3 /* TransitionBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADBC40DD2C3D1254005149B3 /* TransitionBootcamp.swift */; };
 		ADE17CAD2BE1694F00723120 /* CombineBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE17CAC2BE1694F00723120 /* CombineBootcamp.swift */; };
 		ADF17EED2C14589B00ECC22A /* FileManagerBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADF17EEC2C14589B00ECC22A /* FileManagerBootcamp.swift */; };
 /* End PBXBuildFile section */
@@ -75,8 +77,10 @@
 		AD6004032BDA30BA009AB89A /* EscapingClosuresBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EscapingClosuresBootcamp.swift; sourceTree = "<group>"; };
 		AD699E4A2C17162B00DA8A4A /* CacheBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CacheBootcamp.swift; sourceTree = "<group>"; };
 		AD8AB7B62BFD1C6B00932B61 /* SubscriberBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscriberBootcamp.swift; sourceTree = "<group>"; };
+		AD9661182C4F8AF100896794 /* CustomShapeBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomShapeBootcamp.swift; sourceTree = "<group>"; };
 		AD9E53672C28157D0042837E /* AccessibilityVoiceOverBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessibilityVoiceOverBootcamp.swift; sourceTree = "<group>"; };
 		ADBC40DB2C3D08EC005149B3 /* ButtonStyleBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonStyleBootcamp.swift; sourceTree = "<group>"; };
+		ADBC40DD2C3D1254005149B3 /* TransitionBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransitionBootcamp.swift; sourceTree = "<group>"; };
 		ADE17CAC2BE1694F00723120 /* CombineBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CombineBootcamp.swift; sourceTree = "<group>"; };
 		ADF17EEC2C14589B00ECC22A /* FileManagerBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileManagerBootcamp.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -170,6 +174,8 @@
 			children = (
 				AD4F01972C316E0E00F2668B /* ViewModifierBootcamp.swift */,
 				ADBC40DB2C3D08EC005149B3 /* ButtonStyleBootcamp.swift */,
+				ADBC40DD2C3D1254005149B3 /* TransitionBootcamp.swift */,
+				AD9661182C4F8AF100896794 /* CustomShapeBootcamp.swift */,
 			);
 			path = Advanced;
 			sourceTree = "<group>";
@@ -305,6 +311,7 @@
 				AD6004042BDA30BA009AB89A /* EscapingClosuresBootcamp.swift in Sources */,
 				AD6004002BDA243A009AB89A /* WeakSelfBootcamp.swift in Sources */,
 				AD4E0D0B2C2034AA0029621F /* DownloadingImagesRow.swift in Sources */,
+				ADBC40DE2C3D1254005149B3 /* TransitionBootcamp.swift in Sources */,
 				ADE17CAD2BE1694F00723120 /* CombineBootcamp.swift in Sources */,
 				AD4E0D092C202EAA0029621F /* PhotoModelDataService.swift in Sources */,
 				ADBC40DC2C3D08EC005149B3 /* ButtonStyleBootcamp.swift in Sources */,
@@ -321,6 +328,7 @@
 				AD699E4B2C17162B00DA8A4A /* CacheBootcamp.swift in Sources */,
 				AD5540952BD3D2F300756233 /* DragGestureBootcamp.swift in Sources */,
 				AD4E0D032C202B980029621F /* DownloadingImagesBootcamp.swift in Sources */,
+				AD9661192C4F8AF100896794 /* CustomShapeBootcamp.swift in Sources */,
 				AD55409B2BD5346500756233 /* SoundBootcamp.swift in Sources */,
 				AD4E0D0F2C2171B30029621F /* PhotoModelCacheManager.swift in Sources */,
 				AD5540872BD3D2D100756233 /* SwiftfulBootcampApp.swift in Sources */,
