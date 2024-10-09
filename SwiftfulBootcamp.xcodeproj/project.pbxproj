@@ -45,6 +45,7 @@
 		ADBC40DC2C3D08EC005149B3 /* ButtonStyleBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADBC40DB2C3D08EC005149B3 /* ButtonStyleBootcamp.swift */; };
 		ADBC40DE2C3D1254005149B3 /* TransitionBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADBC40DD2C3D1254005149B3 /* TransitionBootcamp.swift */; };
 		ADE17CAD2BE1694F00723120 /* CombineBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE17CAC2BE1694F00723120 /* CombineBootcamp.swift */; };
+		ADE2A2452CB6A25400AEDD99 /* PagingScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE2A2442CB6A25400AEDD99 /* PagingScrollView.swift */; };
 		ADF17EED2C14589B00ECC22A /* FileManagerBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADF17EEC2C14589B00ECC22A /* FileManagerBootcamp.swift */; };
 /* End PBXBuildFile section */
 
@@ -88,6 +89,7 @@
 		ADBC40DB2C3D08EC005149B3 /* ButtonStyleBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonStyleBootcamp.swift; sourceTree = "<group>"; };
 		ADBC40DD2C3D1254005149B3 /* TransitionBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransitionBootcamp.swift; sourceTree = "<group>"; };
 		ADE17CAC2BE1694F00723120 /* CombineBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CombineBootcamp.swift; sourceTree = "<group>"; };
+		ADE2A2442CB6A25400AEDD99 /* PagingScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PagingScrollView.swift; sourceTree = "<group>"; };
 		ADF17EEC2C14589B00ECC22A /* FileManagerBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileManagerBootcamp.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -185,6 +187,7 @@
 				AD9661182C4F8AF100896794 /* CustomShapeBootcamp.swift */,
 				AD9661242C50DFD100896794 /* CustomCurvesBootcamp.swift */,
 				AD5428872CB28F3C00EA3FBA /* VisualEffectBootcamp.swift */,
+				ADE2A2442CB6A25400AEDD99 /* PagingScrollView.swift */,
 			);
 			path = Advanced;
 			sourceTree = "<group>";
@@ -341,6 +344,7 @@
 				AD4E0D032C202B980029621F /* DownloadingImagesBootcamp.swift in Sources */,
 				AD9661192C4F8AF100896794 /* CustomShapeBootcamp.swift in Sources */,
 				AD55409B2BD5346500756233 /* SoundBootcamp.swift in Sources */,
+				ADE2A2452CB6A25400AEDD99 /* PagingScrollView.swift in Sources */,
 				AD4E0D0F2C2171B30029621F /* PhotoModelCacheManager.swift in Sources */,
 				AD5540872BD3D2D100756233 /* SwiftfulBootcampApp.swift in Sources */,
 				AD3AA4202BD8CA0800CF181B /* CoreDataRelationshipsBootcamp.swift in Sources */,
