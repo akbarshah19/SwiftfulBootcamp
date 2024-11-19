@@ -8,7 +8,6 @@
 import SwiftUI
 
 struct RotateViewModifier: ViewModifier {
-    
     let rotation: CGFloat
     
     func body(content: Content) -> some View {
@@ -22,7 +21,6 @@ struct RotateViewModifier: ViewModifier {
 }
 
 extension AnyTransition {
-    
     static var rotating: AnyTransition {
         .modifier(
             active: RotateViewModifier(rotation: 180),
