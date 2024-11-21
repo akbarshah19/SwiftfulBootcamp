@@ -44,6 +44,7 @@
 		AD9E53682C28157D0042837E /* AccessibilityVoiceOverBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD9E53672C28157D0042837E /* AccessibilityVoiceOverBootcamp.swift */; };
 		ADBC40DC2C3D08EC005149B3 /* ButtonStyleBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADBC40DB2C3D08EC005149B3 /* ButtonStyleBootcamp.swift */; };
 		ADBC40DE2C3D1254005149B3 /* TransitionBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADBC40DD2C3D1254005149B3 /* TransitionBootcamp.swift */; };
+		ADCA95372CEFB75200B5EA0A /* GenericsBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADCA95362CEFB75200B5EA0A /* GenericsBootcamp.swift */; };
 		ADE17CAD2BE1694F00723120 /* CombineBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE17CAC2BE1694F00723120 /* CombineBootcamp.swift */; };
 		ADE2A2452CB6A25400AEDD99 /* PagingScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE2A2442CB6A25400AEDD99 /* PagingScrollView.swift */; };
 		ADF17EED2C14589B00ECC22A /* FileManagerBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADF17EEC2C14589B00ECC22A /* FileManagerBootcamp.swift */; };
@@ -88,6 +89,7 @@
 		AD9E53672C28157D0042837E /* AccessibilityVoiceOverBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessibilityVoiceOverBootcamp.swift; sourceTree = "<group>"; };
 		ADBC40DB2C3D08EC005149B3 /* ButtonStyleBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonStyleBootcamp.swift; sourceTree = "<group>"; };
 		ADBC40DD2C3D1254005149B3 /* TransitionBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransitionBootcamp.swift; sourceTree = "<group>"; };
+		ADCA95362CEFB75200B5EA0A /* GenericsBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericsBootcamp.swift; sourceTree = "<group>"; };
 		ADE17CAC2BE1694F00723120 /* CombineBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CombineBootcamp.swift; sourceTree = "<group>"; };
 		ADE2A2442CB6A25400AEDD99 /* PagingScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PagingScrollView.swift; sourceTree = "<group>"; };
 		ADF17EEC2C14589B00ECC22A /* FileManagerBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileManagerBootcamp.swift; sourceTree = "<group>"; };
@@ -188,6 +190,7 @@
 				AD9661242C50DFD100896794 /* CustomCurvesBootcamp.swift */,
 				AD5428872CB28F3C00EA3FBA /* VisualEffectBootcamp.swift */,
 				ADE2A2442CB6A25400AEDD99 /* PagingScrollView.swift */,
+				ADCA95362CEFB75200B5EA0A /* GenericsBootcamp.swift */,
 			);
 			path = Advanced;
 			sourceTree = "<group>";
@@ -341,6 +344,7 @@
 				AD4E0D132C21C5B00029621F /* AccessibilityTextBootcamp.swift in Sources */,
 				AD699E4B2C17162B00DA8A4A /* CacheBootcamp.swift in Sources */,
 				AD5540952BD3D2F300756233 /* DragGestureBootcamp.swift in Sources */,
+				ADCA95372CEFB75200B5EA0A /* GenericsBootcamp.swift in Sources */,
 				AD4E0D032C202B980029621F /* DownloadingImagesBootcamp.swift in Sources */,
 				AD9661192C4F8AF100896794 /* CustomShapeBootcamp.swift in Sources */,
 				AD55409B2BD5346500756233 /* SoundBootcamp.swift in Sources */,
