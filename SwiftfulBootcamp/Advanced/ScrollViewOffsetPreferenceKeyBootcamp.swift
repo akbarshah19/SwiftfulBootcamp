@@ -44,6 +44,7 @@ struct ScrollViewOffsetPreferenceKeyBootcamp: View {
             }
             .padding()
         }
+        .scrollIndicators(.hidden)
         .overlay(Text("\(scrollViewOffset)"))
         .onPreferenceChange(ScrollViewOffsetPreferenceKey.self) { value in
             scrollViewOffset = value
