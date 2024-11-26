@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AD0E00762CF64C2A0083E647 /* CustomTabBarBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD0E00752CF64C2A0083E647 /* CustomTabBarBootcamp.swift */; };
 		AD3AA4202BD8CA0800CF181B /* CoreDataRelationshipsBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD3AA41F2BD8CA0800CF181B /* CoreDataRelationshipsBootcamp.swift */; };
 		AD3AA4232BD8CB7600CF181B /* CoreDataContainer.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AD3AA4212BD8CB7600CF181B /* CoreDataContainer.xcdatamodeld */; };
 		AD4E0D032C202B980029621F /* DownloadingImagesBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD4E0D022C202B980029621F /* DownloadingImagesBootcamp.swift */; };
@@ -52,6 +53,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AD0E00752CF64C2A0083E647 /* CustomTabBarBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBarBootcamp.swift; sourceTree = "<group>"; };
 		AD3AA41F2BD8CA0800CF181B /* CoreDataRelationshipsBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataRelationshipsBootcamp.swift; sourceTree = "<group>"; };
 		AD3AA4222BD8CB7600CF181B /* CoreDataContainer.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CoreDataContainer.xcdatamodel; sourceTree = "<group>"; };
 		AD4E0D022C202B980029621F /* DownloadingImagesBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadingImagesBootcamp.swift; sourceTree = "<group>"; };
@@ -108,6 +110,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AD0E00742CF64C100083E647 /* CustomTabBar */ = {
+			isa = PBXGroup;
+			children = (
+				AD0E00752CF64C2A0083E647 /* CustomTabBarBootcamp.swift */,
+			);
+			path = CustomTabBar;
+			sourceTree = "<group>";
+		};
 		AD4E0CFD2C1F18E20029621F /* DownloadingImages */ = {
 			isa = PBXGroup;
 			children = (
@@ -194,6 +204,7 @@
 				ADE2A2442CB6A25400AEDD99 /* PagingScrollView.swift */,
 				ADCA95362CEFB75200B5EA0A /* GenericsBootcamp.swift */,
 				AD7322122CF1FE29004E8D60 /* ScrollViewOffsetPreferenceKeyBootcamp.swift */,
+				AD0E00742CF64C100083E647 /* CustomTabBar */,
 			);
 			path = Advanced;
 			sourceTree = "<group>";
@@ -329,6 +340,7 @@
 				AD6004022BDA2E54009AB89A /* TypealiasBootcamp.swift in Sources */,
 				AD6004042BDA30BA009AB89A /* EscapingClosuresBootcamp.swift in Sources */,
 				AD6004002BDA243A009AB89A /* WeakSelfBootcamp.swift in Sources */,
+				AD0E00762CF64C2A0083E647 /* CustomTabBarBootcamp.swift in Sources */,
 				AD4E0D0B2C2034AA0029621F /* DownloadingImagesRow.swift in Sources */,
 				ADBC40DE2C3D1254005149B3 /* TransitionBootcamp.swift in Sources */,
 				ADE17CAD2BE1694F00723120 /* CombineBootcamp.swift in Sources */,
