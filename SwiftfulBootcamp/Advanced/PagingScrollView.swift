@@ -68,7 +68,7 @@ struct PagingScrollView: View {
                     Rectangle()
                         .frame(maxWidth: .infinity)
                         .overlay {
-                            Text("\(i+1) element")
+                            Text("\(i + 1) element")
                                 .foregroundStyle(.white)
                         }
                         .containerRelativeFrame(.vertical, alignment: .center)
