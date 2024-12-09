@@ -15,9 +15,31 @@ struct TabBarItem: Hashable {
 
 struct CustomTabBarBootcamp: View {
     
+    @State private var tabSelection: TabBarItem = .init(iconName: "house", title: "Home", color: .red)
+        
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        CustomTabBarContainerView(selection: $tabSelection) {
+            Color.red
+                .tabBarItem(.init(iconName: "house", title: "Home", color: .red), selection: $tabSelection)
+            
+            Color.blue
+                .tabBarItem(.init(iconName: "heart", title: "Favorites", color: .blue), selection: $tabSelection)
+            
+            Color.green
+                .tabBarItem(.init(iconName: "person", title: "Profile", color: .green), selection: $tabSelection)
+        }
     }
+}
+
+#Preview {
+    let tabs: [TabBarItem] = [
+        .init(iconName: "house", title: "Home", color: .red),
+        .init(iconName: "heart", title: "Favourites", color: .blue),
+        .init(iconName: "person", title: "Profile", color: .green)
+    ]
+    
+    CustomTabBarBootcamp()
 }
 
 struct CustomTabBarView: View {
@@ -48,7 +70,7 @@ struct CustomTabBarView: View {
         .padding(.vertical, 8)
         .frame(maxWidth: .infinity)
         .background(tab.color.opacity(0.2))
-        .clipShape(.rect(cornerRadius: 20))
+        .clipShape(.rect(cornerRadius: 8))
     }
     
     private func switchTab(tab: TabBarItem) {
@@ -76,16 +98,36 @@ struct CustomTabBarContainerView<Content: View>: View {
             }
             
             CustomTabBarView(tabs: tabs, selection: $selection)
+                .padding(8)
+        }
+        .onPreferenceChange(TabBarItemsPreferenceKey.self) { value in
+            self.tabs = value
         }
     }
 }
 
-#Preview {
-    static let tabs: [TabBarItem] = [
-        .init(iconName: "house", title: "Home", color: .red),
-        .init(iconName: "heart", title: "Favourites", color: .blue),
-        .init(iconName: "person", title: "Profile", color: .green)
-    ]
+struct TabBarItemsPreferenceKey: PreferenceKey {
+    static var defaultValue: [TabBarItem] = []
     
-    CustomTabBarContainerView(selection: .constant(.init(iconName: "house", title: "Home")) {}
+    static func reduce(value: inout [TabBarItem], nextValue: () -> [TabBarItem]) {
+        value += nextValue()
+    }
+}
+
+struct TabBarItemViewModifier: ViewModifier {
+    
+    let tab: TabBarItem
+    @Binding var selection: TabBarItem
+    
+    func body(content: Content) -> some View {
+        content
+            .opacity(selection == tab ? 1.0 : 0.0)
+            .preference(key: TabBarItemsPreferenceKey.self, value: [tab])
+    }
+}
+
+extension View {
+    func tabBarItem(_ tab: TabBarItem, selection: Binding<TabBarItem>) -> some View {
+        modifier(TabBarItemViewModifier(tab: tab, selection: selection))
+    }
 }
