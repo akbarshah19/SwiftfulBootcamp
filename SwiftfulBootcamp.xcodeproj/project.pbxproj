@@ -37,6 +37,7 @@
 		AD6004002BDA243A009AB89A /* WeakSelfBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6003FF2BDA243A009AB89A /* WeakSelfBootcamp.swift */; };
 		AD6004022BDA2E54009AB89A /* TypealiasBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6004012BDA2E54009AB89A /* TypealiasBootcamp.swift */; };
 		AD6004042BDA30BA009AB89A /* EscapingClosuresBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6004032BDA30BA009AB89A /* EscapingClosuresBootcamp.swift */; };
+		AD68FFC02D0A0BF100B1E1C3 /* CustomNavBarBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD68FFBF2D0A0BF100B1E1C3 /* CustomNavBarBootcamp.swift */; };
 		AD699E4B2C17162B00DA8A4A /* CacheBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD699E4A2C17162B00DA8A4A /* CacheBootcamp.swift */; };
 		AD7322132CF1FE29004E8D60 /* ScrollViewOffsetPreferenceKeyBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD7322122CF1FE29004E8D60 /* ScrollViewOffsetPreferenceKeyBootcamp.swift */; };
 		AD8AB7B72BFD1C6B00932B61 /* SubscriberBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD8AB7B62BFD1C6B00932B61 /* SubscriberBootcamp.swift */; };
@@ -84,6 +85,7 @@
 		AD6003FF2BDA243A009AB89A /* WeakSelfBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeakSelfBootcamp.swift; sourceTree = "<group>"; };
 		AD6004012BDA2E54009AB89A /* TypealiasBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypealiasBootcamp.swift; sourceTree = "<group>"; };
 		AD6004032BDA30BA009AB89A /* EscapingClosuresBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EscapingClosuresBootcamp.swift; sourceTree = "<group>"; };
+		AD68FFBF2D0A0BF100B1E1C3 /* CustomNavBarBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNavBarBootcamp.swift; sourceTree = "<group>"; };
 		AD699E4A2C17162B00DA8A4A /* CacheBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CacheBootcamp.swift; sourceTree = "<group>"; };
 		AD7322122CF1FE29004E8D60 /* ScrollViewOffsetPreferenceKeyBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollViewOffsetPreferenceKeyBootcamp.swift; sourceTree = "<group>"; };
 		AD8AB7B62BFD1C6B00932B61 /* SubscriberBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscriberBootcamp.swift; sourceTree = "<group>"; };
@@ -110,14 +112,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		AD0E00742CF64C100083E647 /* CustomTabBar */ = {
-			isa = PBXGroup;
-			children = (
-				AD0E00752CF64C2A0083E647 /* CustomTabBarBootcamp.swift */,
-			);
-			path = CustomTabBar;
-			sourceTree = "<group>";
-		};
 		AD4E0CFD2C1F18E20029621F /* DownloadingImages */ = {
 			isa = PBXGroup;
 			children = (
@@ -204,7 +198,8 @@
 				ADE2A2442CB6A25400AEDD99 /* PagingScrollView.swift */,
 				ADCA95362CEFB75200B5EA0A /* GenericsBootcamp.swift */,
 				AD7322122CF1FE29004E8D60 /* ScrollViewOffsetPreferenceKeyBootcamp.swift */,
-				AD0E00742CF64C100083E647 /* CustomTabBar */,
+				AD0E00752CF64C2A0083E647 /* CustomTabBarBootcamp.swift */,
+				AD68FFBF2D0A0BF100B1E1C3 /* CustomNavBarBootcamp.swift */,
 			);
 			path = Advanced;
 			sourceTree = "<group>";
@@ -375,6 +370,7 @@
 				AD3AA4232BD8CB7600CF181B /* CoreDataContainer.xcdatamodeld in Sources */,
 				AD4E0D052C202CE10029621F /* PhotoModel.swift in Sources */,
 				AD5540972BD3EB3900756233 /* GeometryReaderBootcamp.swift in Sources */,
+				AD68FFC02D0A0BF100B1E1C3 /* CustomNavBarBootcamp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
