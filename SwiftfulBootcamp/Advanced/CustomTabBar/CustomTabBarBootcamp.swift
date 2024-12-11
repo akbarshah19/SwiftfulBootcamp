@@ -7,38 +7,53 @@
 
 import SwiftUI
 
-struct TabBarItem: Hashable {
-    let iconName: String
-    let title: String
-    let color: Color
+enum TabBarItem: Hashable {
+    case home, favroites, profile
+    
+    var iconName: String {
+        switch self {
+        case .home: return "house"
+        case .favroites: return "heart"
+        case .profile: return "person"
+        }
+    }
+    
+    var title: String {
+        switch self {
+        case .home: return "Home"
+        case .favroites: return "Favourites"
+        case .profile: return "Profile"
+        }
+    }
+    
+    var color: Color {
+        switch self {
+        case .home: return Color.red
+        case .favroites: return Color.blue
+        case .profile: return Color.green
+        }
+    }
 }
 
 struct CustomTabBarBootcamp: View {
     
-    @State private var tabSelection: TabBarItem = .init(iconName: "house", title: "Home", color: .red)
-        
+    @State private var tabSelection: TabBarItem = .home
     
     var body: some View {
         CustomTabBarContainerView(selection: $tabSelection) {
             Color.red
-                .tabBarItem(.init(iconName: "house", title: "Home", color: .red), selection: $tabSelection)
+                .tabBarItem(.home, selection: $tabSelection)
             
             Color.blue
-                .tabBarItem(.init(iconName: "heart", title: "Favorites", color: .blue), selection: $tabSelection)
+                .tabBarItem(.favroites, selection: $tabSelection)
             
             Color.green
-                .tabBarItem(.init(iconName: "person", title: "Profile", color: .green), selection: $tabSelection)
+                .tabBarItem(.profile, selection: $tabSelection)
         }
     }
 }
 
 #Preview {
-    let tabs: [TabBarItem] = [
-        .init(iconName: "house", title: "Home", color: .red),
-        .init(iconName: "heart", title: "Favourites", color: .blue),
-        .init(iconName: "person", title: "Profile", color: .green)
-    ]
-    
     CustomTabBarBootcamp()
 }
 
@@ -58,7 +73,12 @@ struct CustomTabBarView: View {
         }
     }
     
+    @ViewBuilder
     private func tabView(tab: TabBarItem) -> some View {
+        var isSelected: Bool {
+            return selection == tab
+        }
+        
         VStack {
             Image(systemName: tab.iconName)
                 .font(.headline)
@@ -66,10 +86,10 @@ struct CustomTabBarView: View {
             Text(tab.title)
                 .font(.system(size: 10, weight: .semibold))
         }
-        .foregroundStyle(tab.color)
+        .foregroundStyle(isSelected ? tab.color : .gray)
         .padding(.vertical, 8)
         .frame(maxWidth: .infinity)
-        .background(tab.color.opacity(0.2))
+        .background(isSelected ? tab.color.opacity(0.2) : .clear)
         .clipShape(.rect(cornerRadius: 8))
     }
     
