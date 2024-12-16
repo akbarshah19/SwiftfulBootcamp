@@ -33,9 +33,7 @@ struct UITestingBootcampView: View {
             .ignoresSafeArea()
             
             if vm.currentUserIsSignedIn {
-                Text("Signed In!")
-                    .foregroundStyle(.white)
-                    .transition(.move(edge: .trailing))
+                SignedInHomeView()
             }
             
             if !vm.currentUserIsSignedIn {
@@ -52,10 +50,11 @@ struct UITestingBootcampView: View {
                 .padding()
                 .background(.white)
                 .clipShape(.rect(cornerRadius: 10))
+                .accessibilityIdentifier("SignUpTextField")
             
             Button {
                 withAnimation(.spring) {
-                    vm.currentUserIsSignedIn.toggle()
+                    vm.signUpPressed()
                 }
             } label: {
                 Text("Sign Up")
@@ -68,6 +67,47 @@ struct UITestingBootcampView: View {
         }
         .padding()
         .font(.headline)
+    }
+}
+
+struct SignedInHomeView: View {
+    
+    @State private var showAlert: Bool = false
+    
+    var body: some View {
+        NavigationView {
+            VStack {
+                Text("Signed In!")
+                    .font(.title)
+                    .transition(.move(edge: .trailing))
+                
+                Button {
+                    showAlert.toggle()
+                } label: {
+                    Text("Show Alert")
+                        .padding()
+                        .frame(maxWidth: .infinity)
+                        .foregroundStyle(.white)
+                        .background(.blue)
+                        .clipShape(.rect(cornerRadius: 10))
+                }
+                
+                NavigationLink {
+                    Text("Destination")
+                } label: {
+                    Text("Navigate")
+                        .padding()
+                        .frame(maxWidth: .infinity)
+                        .foregroundStyle(.white)
+                        .background(.blue)
+                        .clipShape(.rect(cornerRadius: 10))
+                }
+            }
+            .padding()
+            .alert(isPresented: $showAlert, content: {
+                return Alert(title: Text("Alert"))
+            })
+        }
     }
 }
 
