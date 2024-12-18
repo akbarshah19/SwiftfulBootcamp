@@ -43,4 +43,8 @@ final class UITestingBootcampView_UITests: XCTestCase {
         app.buttons["Sign Up"].tap()
         XCTAssertTrue(app.staticTexts["Signed In!"].exists)
     }
+    
+    func test_UITestingBootcampView_signUpButton_shouldSignOut() {
+        
+    }
 }
