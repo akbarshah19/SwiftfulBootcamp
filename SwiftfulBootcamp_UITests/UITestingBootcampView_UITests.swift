@@ -31,20 +31,110 @@ final class UITestingBootcampView_UITests: XCTestCase {
     func test_UITestingBootcampView_signUpButton_shouldNotSignIn() {
         let addTextTextField = app.textFields["SignUpTextField"]
         addTextTextField.tap()
-        app.buttons["Sign Up"].tap()
-        XCTAssertFalse(app.staticTexts["Signed In!"].exists)
+        
+        let signUoButton = app.buttons["SignUpButton"]
+        signUoButton.tap()
+        
+        XCTAssertFalse(app.staticTexts["SignedInText"].exists)
     }
     
     func test_UITestingBootcampView_signUpButton_shouldSignIn() {
         let addTextTextField = app.textFields["SignUpTextField"]
         addTextTextField.tap()
-        let gKey = app/*@START_MENU_TOKEN@*/.keys["G"]/*[[".keyboards",".otherElements[\"UIKeyboardLayoutStar Preview\"].keys[\"G\"]",".keys[\"G\"]"],[[[-1,2],[-1,1],[-1,0,1]],[[-1,2],[-1,1]]],[0]]@END_MENU_TOKEN@*/
+        
+        let gKey = app.keys["G"]
         gKey.tap()
-        app.buttons["Sign Up"].tap()
-        XCTAssertTrue(app.staticTexts["Signed In!"].exists)
+        
+        let signUoButton = app.buttons["SignUpButton"]
+        signUoButton.tap()
+        
+        let signedInText = app.staticTexts["SignedInText"]
+        
+        XCTAssertTrue(signedInText.exists)
     }
     
-    func test_UITestingBootcampView_signUpButton_shouldSignOut() {
+    func test_SignedInHomeView_showAlertButton_shouldDisplayAlert() {
+        let addTextTextField = app.textFields["SignUpTextField"]
+        addTextTextField.tap()
         
+        let gKey = app.keys["G"]
+        gKey.tap()
+        
+        let signUoButton = app.buttons["SignUpButton"]
+        signUoButton.tap()
+        
+        let showAlertButton = app.buttons["ShowAlertButton"]
+        showAlertButton.tap()
+        
+        let alert = app.alerts.firstMatch
+        XCTAssertTrue(alert.exists)
+    }
+    
+    func test_SignedInHomeView_showAlertButton_shouldDisplayandDismissAlert() {
+        let addTextTextField = app.textFields["SignUpTextField"]
+        addTextTextField.tap()
+        
+        let gKey = app.keys["G"]
+        gKey.tap()
+        
+        let signUoButton = app.buttons["SignUpButton"]
+        signUoButton.tap()
+        
+        let showAlertButton = app.buttons["ShowAlertButton"]
+        showAlertButton.tap()
+        
+        let alert = app.alerts.firstMatch
+        XCTAssertTrue(alert.exists)
+        
+        let alertOkButton = alert.buttons["OK"]
+        alertOkButton.tap()
+        
+        let alertOkButtonExists = alertOkButton.waitForExistence(timeout: 5)
+        XCTAssertTrue(alertOkButtonExists)
+        
+        let alertExists = alert.waitForExistence(timeout: 5)
+        XCTAssertFalse(alertExists)
+        
+        XCTAssertFalse(alert.exists)
+    }
+    
+    func test_SignedInHomeView_navigationLinkToDestination_shouldNavigateToDestination() {
+        let addTextTextField = app.textFields["SignUpTextField"]
+        addTextTextField.tap()
+        
+        let gKey = app.keys["G"]
+        gKey.tap()
+        
+        let signUoButton = app.buttons["SignUpButton"]
+        signUoButton.tap()
+        
+        let navLink = app.buttons["NavigationLinkToDestination"]
+        navLink.tap()
+        
+        let destinationText = app.staticTexts["Destination"]
+        XCTAssertTrue(destinationText.exists)
+    }
+    
+    func test_SignedInHomeView_navigationLinkToDestination_shouldNavigateToDestinationAndGoBack() {
+        let addTextTextField = app.textFields["SignUpTextField"]
+        addTextTextField.tap()
+        
+        let gKey = app.keys["G"]
+        gKey.tap()
+        
+        let signUoButton = app.buttons["SignUpButton"]
+        signUoButton.tap()
+        
+        let navLink = app.buttons["NavigationLinkToDestination"]
+        navLink.tap()
+        
+        let destinationText = app.staticTexts["Destination"]
+        XCTAssertTrue(destinationText.exists)
+        
+        let navBackButton = app.navigationBars.buttons["Back"]
+        navBackButton.tap()
+        
+        let signedInText = app.staticTexts["SignedInText"]
+        XCTAssertTrue(signedInText.exists)
     }
 }

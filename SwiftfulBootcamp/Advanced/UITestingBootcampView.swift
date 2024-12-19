@@ -64,6 +64,7 @@ struct UITestingBootcampView: View {
                     .background(.blue)
                     .clipShape(.rect(cornerRadius: 10))
             }
+            .accessibilityIdentifier("SignUpButton")
         }
         .padding()
         .font(.headline)
@@ -80,6 +81,7 @@ struct SignedInHomeView: View {
                 Text("Signed In!")
                     .font(.title)
                     .transition(.move(edge: .trailing))
+                    .accessibilityIdentifier("SignedInText")
                 
                 Button {
                     showAlert.toggle()
@@ -91,6 +93,7 @@ struct SignedInHomeView: View {
                         .background(.blue)
                         .clipShape(.rect(cornerRadius: 10))
                 }
+                .accessibilityIdentifier("ShowAlertButton")
                 
                 NavigationLink {
                     Text("Destination")
@@ -102,6 +105,7 @@ struct SignedInHomeView: View {
                         .background(.blue)
                         .clipShape(.rect(cornerRadius: 10))
                 }
+                .accessibilityIdentifier("NavigationLinkToDestination")
             }
             .padding()
             .alert(isPresented: $showAlert, content: {
