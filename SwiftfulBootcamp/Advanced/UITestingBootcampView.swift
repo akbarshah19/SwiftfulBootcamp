@@ -11,7 +11,11 @@ class UITestingBootcampViewModel: ObservableObject {
     
     let placeHolder: String = "Add text..."
     @Published var text: String = ""
-    @Published var currentUserIsSignedIn: Bool = false
+    @Published var currentUserIsSignedIn: Bool
+    
+    init(currentUserIsSignedIn: Bool) {
+        self.currentUserIsSignedIn = currentUserIsSignedIn
+    }
     
     func signUpPressed() {
         guard !text.isEmpty else { return }
@@ -21,7 +25,11 @@ class UITestingBootcampViewModel: ObservableObject {
 
 struct UITestingBootcampView: View {
     
-    @StateObject private var vm = UITestingBootcampViewModel()
+    @StateObject private var vm: UITestingBootcampViewModel
+    
+    init(currentUserIsSignedIn: Bool) {
+        _vm = StateObject(wrappedValue: UITestingBootcampViewModel(currentUserIsSignedIn: currentUserIsSignedIn))
+    }
     
     var body: some View {
         ZStack {
@@ -116,5 +124,5 @@ struct SignedInHomeView: View {
 }
 
 #Preview {
-    UITestingBootcampView()
+    UITestingBootcampView(currentUserIsSignedIn: false)
 }
