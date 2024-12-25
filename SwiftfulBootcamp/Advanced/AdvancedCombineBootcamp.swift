@@ -18,7 +18,7 @@ class AdvancedCombineDataService {
     
     func publishFakeData() {
         DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
-            self.basicPublisher = ["One", "Two", "Three"]
+            self.basicPublisher = ["One", "Two", "Three", "Four", "Five"]
         }
     }
 }
@@ -58,6 +58,7 @@ struct AdvancedCombineBootcamp: View {
             VStack {
                 ForEach(vm.data, id: \.self) { data in
                     Text(data)
+                        .font(.headline)
                 }
             }
         }
