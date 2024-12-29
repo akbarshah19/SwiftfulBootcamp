@@ -34,18 +34,18 @@ class AdvancedCombineBootcampViewModel: ObservableObject {
     }
     
     func addSubscribers() {
-        dataService.$basicPublisher
-            .sink { completion in
-                switch completion {
-                case .finished:
-                    break
-                case .failure(let error):
-                    print(error)
-                }
-            } receiveValue: { [weak self] value in
-                self?.data = value
-            }
-            .store(in: &cancellables)
+//        dataService.$basicPublisher
+//            .sink { completion in
+//                switch completion {
+//                case .finished:
+//                    break
+//                case .failure(let error):
+//                    print(error)
+//                }
+//            } receiveValue: { [weak self] value in
+//                self?.data = value
+//            }
+//            .store(in: &cancellables)
     }
 }
 
