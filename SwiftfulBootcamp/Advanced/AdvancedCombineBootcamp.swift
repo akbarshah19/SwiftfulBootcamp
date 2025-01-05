@@ -75,8 +75,15 @@ class AdvancedCombineBootcampViewModel: ObservableObject {
             //})
             //.removeDuplicates()
             //.replaceNil(with: 5)
+            //.scan(0, { exitingValue, newValue in
+            //    return exitingValue + newValue
+            //})
+            //.scan(0, { $0 + $1 })
+            //.scan(0, +)
+            //.reduce(0, +)
         
             .map { String($0) }
+            //.collect()
             .sink { completion in
                 switch completion {
                 case .finished:
