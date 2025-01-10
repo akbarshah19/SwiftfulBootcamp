@@ -31,6 +31,18 @@ class AdvancedCombineDataService {
                 }
             }
         }
+        
+//        DispatchQueue.main.asyncAfter(deadline: .now() + 0) {
+//            self.passThroughtPublisher.send(1)
+//        }
+//        
+//        DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+//            self.passThroughtPublisher.send(2)
+//        }
+//        
+//        DispatchQueue.main.asyncAfter(deadline: .now() + 1.5) {
+//            self.passThroughtPublisher.send(3)
+//        }
     }
 }
 
@@ -81,9 +93,15 @@ class AdvancedCombineBootcampViewModel: ObservableObject {
             //.scan(0, { $0 + $1 })
             //.scan(0, +)
             //.reduce(0, +)
+            //.collect()
+            //.allSatisfy( {$0 < 50} )
+            //.debounce(for: 0.75, scheduler: DispatchQueue.main)
+            //.delay(for: 2, scheduler: DispatchQueue.main)
+            //.throttle(for: 5, scheduler: DispatchQueue.main, latest: true)
+            //.retry(3)
+            //.timeout(5, scheduler: DispatchQueue.main)
         
             .map { String($0) }
-            //.collect()
             .sink { completion in
                 switch completion {
                 case .finished:
