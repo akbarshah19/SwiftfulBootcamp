@@ -13,6 +13,7 @@ class AdvancedCombineDataService {
 //    @Published var basicPublisher: String = "First Value"
 //    let currentValuePublisher = CurrentValueSubject<String, Error>("First Value")
     let passThroughtPublisher = PassthroughSubject<Int, Error>()
+    let passThroughtPublisher2 = PassthroughSubject<Bool, Error>()
     
     init() {
         publishFakeData()
@@ -25,6 +26,12 @@ class AdvancedCombineDataService {
             DispatchQueue.main.asyncAfter(deadline: .now() + Double(x)) {
 //                self.basicPublisher = items[x]
                 self.passThroughtPublisher.send(items[x])
+                
+                if (x > 4 && x < 8) {
+                    passThroughtPublisher2.send(true)
+                } else {
+                    passThroughtPublisher2.send(false)
+                }
                 
                 if x == items.indices.last {
                     self.passThroughtPublisher.send(completion: .finished)
@@ -100,6 +107,17 @@ class AdvancedCombineBootcampViewModel: ObservableObject {
             //.throttle(for: 5, scheduler: DispatchQueue.main, latest: true)
             //.retry(3)
             //.timeout(5, scheduler: DispatchQueue.main)
+        
+            //.combineLatest(dataService.passThroughtPublisher2)
+            //.compactMap { int, bool in
+            //   if bool {
+            //        return String(int)
+            //    }
+            //
+            //    return nil
+            //}
+            
+            
         
             .map { String($0) }
             .sink { completion in
