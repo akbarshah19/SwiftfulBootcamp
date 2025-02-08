@@ -28,9 +28,9 @@ class AdvancedCombineDataService {
                 self.passThroughtPublisher.send(items[x])
                 
                 if (x > 4 && x < 8) {
-                    passThroughtPublisher2.send(true)
+                    self.passThroughtPublisher2.send(true)
                 } else {
-                    passThroughtPublisher2.send(false)
+                    self.passThroughtPublisher2.send(false)
                 }
                 
                 if x == items.indices.last {
@@ -116,8 +116,11 @@ class AdvancedCombineBootcampViewModel: ObservableObject {
             //
             //    return nil
             //}
-            
-            
+            //.merge(with: dataService.passThroughtPublisher2)
+            //.zip(dataService.passThroughtPublisher2)
+            //.map { tuple in
+            //    return String(tuple.0) + tuple.1.description
+            //}
         
             .map { String($0) }
             .sink { completion in
