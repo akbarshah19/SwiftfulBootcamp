@@ -10,16 +10,17 @@ import SwiftUI
 @main
 struct SwiftfulBootcampApp: App {
     
-    let isUserSignedIn: Bool
-    
-    init() {
-        var isUserSignedIn: Bool = CommandLine.arguments.contains("-UITest_startSignedIn")
-        self.isUserSignedIn = isUserSignedIn
-    }
+//    let isUserSignedIn: Bool
+//    
+//    init() {
+//        var isUserSignedIn: Bool = CommandLine.arguments.contains("-UITest_startSignedIn")
+//        self.isUserSignedIn = isUserSignedIn
+//    }
     
     var body: some Scene {
         WindowGroup {
-            UITestingBootcampView(currentUserIsSignedIn: isUserSignedIn)
+//            UITestingBootcampView(currentUserIsSignedIn: isUserSignedIn)
+            PropertyWrapperBootcamp()
         }
     }
 }
